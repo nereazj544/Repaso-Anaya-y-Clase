@@ -12,14 +12,18 @@ public class ej4_2 {
          * 2) estás
          */
 
-        // String[] posiciones = {"hola", "como", "estas"};
-        
-        // for (int i = 0; i > posiciones.length; i++)
-        //     System.out.println(posiciones);
-        
-        String[] posicion = {"hola", "como", "estas"};
+        // de esta manera no fundiona
+        /*
+         * 
+         * String[] posiciones = {"hola", "como", "estas"};
+         * // es debido a el > esta al reves y que el print le faltan cosas, pero faltaba
+         * for (int i = 0; i > posiciones.length; i++)
+         * System.out.println(posiciones);
+         */
+
+        String[] posicion = { "hola", "como", "estas" };
 
         for (int i = 0; i < posicion.length; i++)
-        System.out.println(i + ")" + posicion[i]) ;
+            System.out.println(i + ")" + posicion[i]);
     }
 }
