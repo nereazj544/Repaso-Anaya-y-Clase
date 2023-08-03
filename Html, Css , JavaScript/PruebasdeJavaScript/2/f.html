@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Utiliza CSS para ocultar el contenido al principio */
+        #contenido {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenido">
+        <!-- Aquí está el contenido que quieres ocultar inicialmente -->
+        <p>Este es el contenido oculto.</p>
+        <img src="d74a7769352348074f3201c3c271788e841a9a9e_hq.gif" alt="">
+    </div>
+
+
+    <script>
+        if (confirm("¿Estás seguro que deseas continuar?")) {
+            // Si el usuario ha confirmado, muestra el contenido oculto
+            document.getElementById("contenido").style.display = "block";
+            alert("El usuario ha decidido continuar");
+        } else {
+            alert("El usuario ha denegado seguir");
+        }
+    </script>
+</body>
+</html>
