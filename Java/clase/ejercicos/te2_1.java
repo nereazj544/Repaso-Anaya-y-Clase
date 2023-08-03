@@ -9,8 +9,11 @@ public class te2_1 {
      * dirección del alumno.
      */
     public static void main(String[] args) {
+        //Este es la inicial
         System.out.println("Nombre: Neo. Edad: 19 años. Dir: distririto 11");
 
+        // Y esta forma es más enreversada
+        
         Scanner sc = new Scanner(System.in);
         System.out.println(
                 "Bienvenido, nuevo usuario. Necsitamos que consestes a las siententes preguntas. Para empezar dale al enter");
@@ -21,7 +24,10 @@ public class te2_1 {
                 "Bienvenido/a/e/x: " + nombreuser + " seguiremos con la siguiente pregunta; ¿cual es tu edad?");
         String edaduser = sc.nextLine();
         System.out.println("Asi que te llamas " + nombreuser + " y tu edad es: " + edaduser + ".");
+
         /*
+         * DE ESTA PRIMERA MANERA LO QUE PASABA ES QUE NO FUNCIONABA EL BOOLEAN, QUE DARIA FIN AL BUCLE EN CASO A 
+         * LA PREGUNTA DE LA CAMISETA, CON LA SEGUNDA OPCION DE ABAJO, SI QUE ESTA MEJOR YA QUE SE CIERRA DONDE TIENE QUE CERRARSE
          * 
          * String respuesta;
          * boolean preguntaAdicionalHecha = false;
@@ -64,7 +70,7 @@ public class te2_1 {
 
             } else if (respuesta.equalsIgnoreCase("no")) {
                 
-                System.out.println(" ");
+                System.out.println(" "); //Añadi esto para que le diera un espacio.
 
                 System.out.println("Ok, en tal caso terminaremos el formulario aquí.");
 
