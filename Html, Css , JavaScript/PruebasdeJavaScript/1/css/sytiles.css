@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.5);
+    background: black;
+    /* background: url(../img/fondo.jpg) no-repeat fixed; */
+    background-size: cover;
+}
+
+h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: aqua;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h4 {
+    text-align: center;
+    color: gray;
+}
+
+ul {
+    color: aqua;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    list-style-type: circle;
+}
+
+ul li {
+    text-shadow: 2px 4px 5px rgb(143, 215, 143);
+
+}
+
+ul li:before {
+    content: "🌕";
+    /* Puedes cambiar el contenido por cualquier símbolo o texto */
+    color: aqua;
+    /* Cambia el color aquí */
+    display: inline-block;
+    width: 2em;
+    margin-left: -1em;
+}
+
+table {
+    border: blueviolet 3px;
+    color: greenyellow;
+    margin-top: 1em; margin-left: 17em;
+    font-style:unset;
+}
+
+caption{
+    font-style:unset;
+    border: blueviolet 3px;
+}
