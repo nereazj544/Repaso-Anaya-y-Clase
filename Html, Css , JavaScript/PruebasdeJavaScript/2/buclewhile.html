@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Este bucle tiene como fin el de buscar el numero 24 no otro cualquiera
+        
+        var encontrado= false;
+        var num = 24;
+        var buscador;
+        do {
+            buscador = prompt ("Intorduce un numero entre 1-30");
+            if (buscador==num) {
+                alert ("Ok " + buscador + ", numero encontrado");
+                encontrado=true;
+                
+            } else
+                alert ("Nº incorrecto")
+        } while (!encontrado);
+
+    </script>
+</body>
+</html>
