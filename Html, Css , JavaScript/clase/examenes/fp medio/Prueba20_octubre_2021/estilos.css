@@ -1,0 +1,105 @@
+/* FONT PARA CABEZARA Y PAGINA DE PIE */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    padding: 0; margin: 0;
+    list-style: none;
+}
+
+body{
+    background-color: black;
+}
+
+.contendor{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 80%; margin: 15px auto;
+}
+
+header, footer{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    background-image: url(../img/header.jpg);
+}
+
+/* la etiqueta <p> esta en común en ambas */
+p{
+    padding-left: 9px; padding: 9px;
+}
+
+
+/* Menu */
+
+.menu > ul{
+    margin: 8px;
+    background-color: rgb(13, 115, 115);
+    display: flex;
+    height: 40px;
+}
+
+.menu> ul >li{
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.menu > ul > li > a{
+    text-decoration: none; text-align: center; 
+    font-weight: bold;
+    color: white;
+    display: block;
+    line-height: 40px; padding-left: 15px;
+    border: 1px solid white;
+}
+.menu > ul > li > a:hover{
+    background-color: green; color: black;
+    font-weight: bold; text-decoration: solid;
+}
+
+/* Contendor de las secciones */
+
+main{
+    display: flex;
+}
+
+/* CONTENEDOR IZQUIERDA (NO IMANEGES) */
+.iz{
+    background-color: #84A9C0;
+    width: 80%; margin: 12px;
+}
+
+.iz>h2{
+    margin-top: 1em; margin-bottom: 20px;
+    padding-left: 9px;
+    background: #ddd8b8 ; color: #6a66a3;
+}
+
+.iz>ul{
+    padding-left: 24px; margin-bottom: 30px;
+}
+.iz>ul>li{
+    list-style:circle;
+}
+
+/* CONTENEDOR DERECHA (IMANEGES) */
+.der{
+    width: 80%; margin:12px;
+    background-color: #84A9C0;
+}
+
+.der>h2{
+    margin-top: 1em; margin-bottom: 20px;
+    padding-left: 9px;
+    background: #ddd8b8 ; color: #6a66a3;
+}
+
+.img{
+    display: block;
+    text-align: center;
+    background-color: slateblue;
+    padding-top: 3px;
+    margin-top: 40px;
+}
+.img > img{
+    height: 50px;
+}
